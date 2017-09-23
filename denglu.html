@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demodiv{
+            width: 90%;
+            height: 300px;
+            border: 1px solid #eeeeee;
+        }
+
+        p {
+            height: 40px;
+            font-size: 20px;
+            line-height: 40px;
+            color: red;
+            background: lightgrey;;
+        }
+         label{
+             display:inline-block;
+             width:350px;
+             text-align:right;
+         }
+        span{
+            color:red;
+        }
+        input{
+            width:270px;
+            height:40px;
+            margin:20px 0;
+        }
+        .input{
+            background:url(one4.jpg) no-repeat 230px 10px; ;
+        }
+        .submit{
+            border:none;
+            background:dodgerblue;
+            font-size:16px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+<div class="demodiv">
+    <p>输入登录信息</p>
+
+    <form action="index.php?other=denglu" method="post">
+        <div>
+            <label for="name"><span>*</span>用户名：</label>
+            <input type="text" name="username" id="name" class="input"/>
+        </div>
+        <div>
+            <label for="psw"><span>*</span>密码：</label>
+            <input type="password" name="password" id="psw" class="input"/>
+        </div>
+        <div>
+            <label></label>
+            <input type="submit" value="登录" class="submit"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>
